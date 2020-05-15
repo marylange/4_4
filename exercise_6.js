@@ -22,10 +22,10 @@ const objXadrex = () => {
 
 const posicaoNoXadrez = (peca) => {
     let pecaLowerCase = peca.toLowerCase();
-    for(let numeroPeca in objXadrex()) {
-        if(pecaLowerCase == numeroPeca) {
-            return objXadrex()[numeroPeca];
-        }
+    for(let nomePeca in objXadrex()) {
+        if(pecaLowerCase == nomePeca) {
+            return objXadrex()[nomePeca];
+        } 
     }
     return 'Eita!! Essa peça não existe no meu xadrez.';
 }
